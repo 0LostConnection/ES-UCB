@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+/* Limpando e configurando o DOM */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* Fontes do site */
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Estilização dos Textos */
+h1 {
+    /* H1 Personalizado */
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+/* Estilização dos "Headers" */
+h1,
+h2,
+h3 {
+    margin: 40px 0 10px;
+
+    /* Linha de separação */
+    box-shadow: 0px 1px 0px 0 rgba(0, 0, 0, 0.20);
+    width: 100%;
+}
+
+/* Configurando os parágrafos */
+p {
+    /* Fomatação do texto */
+    word-break: break-all;
+    line-height: 1.6rem;
+}
+
+/* Estilização das Imagens */
+.image {
+    /* Efeitos para tornar a mais apresentável */
+    box-shadow: 1.4px 2px 2px 0 rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+
+    /* Tornando a imagem responsiva */
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+
+    /* Colocando margens para deixar explícita a separação */
+    margin: 40px 0 40px 0;
+
+    /* Centralizando a Imagem */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Container dos conteúdos */
+.content-container {
+    margin: 100px 30% 0% 25%;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    background-color: #fff;
+    padding: 1rem 1.15rem;
+    border-bottom: 1px solid #eceef3;
+
+    /* Fixar posição */
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar>.navbar-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-container {
+    width: 1170px;
+    position: relative;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.navbar-header {
+    display: flex;
+    align-items: center;
+
+    >a {
+        color: rgb(79, 219, 86);
+        text-decoration: none;
+    }
+}
+
+.navbar-header h2 {
+    margin: 0px;
+    box-shadow: none;
+}
+
+.navbar-header img {
+    vertical-align: middle;
+    width: 2.5rem;
+}
+
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    flex-basis: auto;
+    flex-grow: 1;
+}
+
+.navbar-nav {
+    margin-left: auto;
+    flex-direction: row;
+    display: flex;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+
+    >li {
+        >a {
+            color: #3c4250;
+            font-size: 1.2rem;
+            text-decoration: none;
+            display: inline-block;
+            padding: 0.5rem 1rem;
+
+            &:hover {
+                color: rgb(79, 219, 86);
+            }
+        }
+
+        &.active {
+            a {
+                color: rgb(79, 219, 86);
+                font-weight: 580;
+            }
+        }
+    }
+}
